@@ -50,7 +50,7 @@ export const initialState =
       "price": 9900
     }
   ],
-  "filters": [
+  "filterIcons": [
     {
       "id": 1,
       "name": "전체",

@@ -1,10 +1,17 @@
 import React from "react";
+import Grid from "../component/Grid";
+import FilterButton from "../component/FilterButton";
 
-export default function Products() {
-
+export default function Products({filterIcons, setFilters}) {
+const items = [1,2,3,4,5,6];
+const handleClick = ()=>{
+    setFilters();
+}
     return(
-        <div>
-            상품 메인페이지입니다.
+        <div className="wrapper product-body">
+
+            <div><FilterButton filterIcons={filterIcons} onclick={handleClick}/></div>
+            <div className="product-list" ><Grid items={items}/></div>
         </div>
     )
 }
