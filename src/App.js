@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState} from "react";
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from "./component/Nav";
@@ -7,10 +7,13 @@ import Products from "./pages/Products";
 import Bookmark from "./pages/Bookmark";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+
   return (
 
       <Router>
-        <Nav/>
+        <Nav isOpen={isOpen} setIsOpen={setIsOpen}/>
         <Routes>
           <Route path="/" element={<Main/>}/>
           <Route path="/products/list" element={<Products/>}/>

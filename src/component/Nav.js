@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import DropDown from './DropDown';
+import DropDown from './DropDown';
 
-function Nav() {
+function Nav({isOpen,setIsOpen}) {
   const handleClick = (e)=>{
    
  };
@@ -19,12 +19,14 @@ function Nav() {
             <div id ="title">COZ Shopping</div>
             </Link>
          
-                <img
+         <div    id="nav-menu">
+         <DropDown isOpen={isOpen} setIsOpen={setIsOpen}/>
+         </div>
+                {/* <img
                     id="nav-menu"
                     src={`${process.env.PUBLIC_URL}/images/nav-menu.png`}
                     alt="logo-nav"
-                />
-              {/* <DropDown /> */}
+                /> */}       
          
         </div>
     );

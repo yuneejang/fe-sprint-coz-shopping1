@@ -6,14 +6,13 @@ body {
   margin: 0;
   padding: 0;
 
-  /* tmp code */
-  background-color: #999; 
-
 }
 
 .wrapper{
-  /* width: calc(100vh - 7.5rem); */
+  width: 100%;
   height: calc(100vh - 7.5rem);
+  background-color: white; 
+  align-items: center
 }
 
 
@@ -72,7 +71,7 @@ color: #000000;
 
 } 
 
-
+/* 푸터 */
 footer{
 
   display: flex;
@@ -142,3 +141,58 @@ align-items: center;
 color: #888888;
 }
 
+
+.main-body{
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: left; */
+  /* padding: 0px; */
+  gap: 24px;
+  
+  /* position: relative; */
+  /* width: 1280px; */
+  /* height: 832px;  */
+  /* overflow-y: scroll; */
+  
+  /* background: #FFFFFF; */
+}
+.main-title{
+  
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+/* align-items: center; */
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+/* flex: none; */
+order: 2;
+flex-grow: 0;
+border: 1px dotted gray;
+
+}
+.main-products{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  
+  width: 1128px;
+  height: 264px;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  border: 1px dotted gray;
+
+}
