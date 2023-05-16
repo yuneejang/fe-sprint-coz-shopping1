@@ -1,5 +1,5 @@
 import React from "react";
-
+import Item from "./Item";
 function Grid({items}) {
   // const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
   return (
@@ -15,20 +15,12 @@ function Grid({items}) {
         backgroundColor: "gray",
       }}
     >
-      {items.map((item, key) => (
-        <div
-          key={key}
+      {items.map((item, idx) => (
+        <Item item={item}
+          key={idx}
           style={{ margin: "5px", backgroundColor: "white", height: "90px" }}
         >
-          {item}
-          <img
-           id="bookmark"
-           src={`${process.env.PUBLIC_URL}/images/bookmark-off.png`}
-           alt="bookmark"
-          />
-          <div>이름</div>
-          <div>추가정보</div>
-        </div>
+        </Item>
         
        
       ))}

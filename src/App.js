@@ -11,7 +11,7 @@ import { initialState } from './assets/state';
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [items, setItems] = useState(initialState.items);
-  const [filterIcons, setFilters] = useState(initialState.items);
+  const [filterIcons, setFilters] = useState(initialState.filterIcons);
 
 
   return (
@@ -20,8 +20,8 @@ function App() {
         <Nav isOpen={isOpen} setIsOpen={setIsOpen}/>
         <Routes>
           <Route path="/" element={<Main/>}/>
-          <Route path="/products/list" element={<Products  />}/>          
-          <Route path="/bookmark" element={<Bookmark/>}/>
+          <Route path="/products/list" element={<Products filterIcons={filterIcons} setFilters={setFilters} items={items} setItems={setItems} />}/>          
+          <Route path="/bookmark" element={<Bookmark filterIcons={filterIcons} setFilters={setFilters} />}/>
           <Route path="/*" element={<Empty/>}/>
 
         </Routes>
