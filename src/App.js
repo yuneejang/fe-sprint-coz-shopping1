@@ -11,7 +11,7 @@ import { initialState } from './assets/state';
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [items, setItems] = useState(initialState.items);
-  const [filterIcons, setFilters] = useState(initialState.filterIcons);
+  const [filterIcons, setFilters] = useState(initialState.filtericons);
 
 
   return (

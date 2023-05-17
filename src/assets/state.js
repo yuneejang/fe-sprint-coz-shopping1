@@ -42,31 +42,31 @@ export const initialState =
       "img": "../images/Modal-8.jpg"
     }
   ],
-  "filterIcons": [
+  "filtericons": [
     {
       "id": 1,
       "name": "전체",
-      "img": "../images/filter-total.png"
+      "img": "../images/filter_images/filter-total.png"
     },
     {
       "id": 2,
       "name": "상품",
-      "img": "../images/filter-product.jpg"
+      "img": "../images/filter_images/filter-product.jpg"
     },
     {
       "id": 3,
       "name": "카테고리",
-      "img": "../images/filter-category.jpg"
+      "img": "../images/filter_images/filter-category.jpg"
     },
     {
       "id": 4,
       "name": "기획전",
-      "img": "../images/filter-exhibition.jpg"
+      "img": "../images/filter_images/filter-exhibition.jpg"
     },
     {
       "id": 5,
       "name": "브랜드",
-      "img": "../images/filter-brand.jpg"
+      "img": "../images/filter_images/filter-brand.jpg"
     }
   ]
 }

@@ -7,11 +7,15 @@ export default function Main() {
   const bookmarkItems = [11, 12, 13, 14];
 
   return(
-        <div className="wrapper main-body">
-            <div className="main-title">상품리스트</div>
-            <div className="main-products"><Grid items={productItems}/></div>
-            <div className="main-title">북마크리스트</div>
-            <div className="main-products"><Grid items={bookmarkItems}/></div>
+        <div className="main-body">
+            <div className="main-title-product">상품리스트</div>
+            <div className="main-list-products">
+            {/* <Grid className="grid" items={productItems}/>
+            <Grid className="grid" items={productItems}/>
+            <Grid className="grid" items={productItems}/> */}
+            <Grid items={productItems}/></div>
+            <div className="main-title-bookmark">북마크리스트</div>
+            <div className="main-list-bookmark"><Grid items={bookmarkItems}/></div>
    
         </div>
     )

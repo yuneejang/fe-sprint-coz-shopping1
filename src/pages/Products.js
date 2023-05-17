@@ -4,9 +4,9 @@ import FilterButton from "../component/FilterButton";
 
 export default function Products({filterIcons, setFilters,items ,setItems}) {
  
-const handleClick = ()=>{
-    setFilters();setItems();
-}
+// const handleClick = ()=>{
+//     setFilters();setItems();
+// }
     return(
         <div className="wrapper product-body">
             <div className="filter-button"> 

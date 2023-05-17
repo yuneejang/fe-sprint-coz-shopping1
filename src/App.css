@@ -173,7 +173,8 @@ vertical-align: middle;
   align-items: center;
   position: relative; 
  vertical-align: middle;
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+ background: #FFFFFF;
+ border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
 }
 
 .drop-bookmark{
@@ -318,33 +319,35 @@ color: #888888;
 .main-body{
   display: flex;
   flex-direction: column;
-  /* align-items: left; */
+  align-items: center;
   /* padding: 0px; */
   gap: 24px;
   
-  /* position: relative; */
-  /* width: 1280px; */
-  /* height: 832px;  */
+  position: relative;
+  /* width: 1280px; 
+  height: 832px;  */
+  height: calc(100vh - 7.5rem);
   /* overflow-y: scroll; */
   
   /* background: #FFFFFF; */
-  border: 1px dotted gray;
+  border: 1px dotted red;
 
 
 }
-.main-title{
+.main-title-product{
+  /* position: relative; */
   position: absolute;
-left: 42.66%;
-right: 42.73%;
-top: 50%;
-bottom: 18.97%;
+left: 15%;
+/* right: 42.73%;  */
+top: 24px;
+
+gap:24px;
 
 font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
 font-size: 24px;
 line-height: 29px;
-display: flex;
 /* align-items: center; */
 
 color: #000000;
@@ -353,12 +356,68 @@ color: #000000;
 /* Inside auto layout */
 
 /* flex: none; */
-order: 2;
-flex-grow: 0;
+/* order: 2;
+flex-grow: 0; */
 border: 1px dotted gray;
 
 }
-.main-products{
+
+.main-title-bookmark{
+ position: relative;
+ position: absolute;
+ left: 15%;
+ /* right: 42.73%; */ 
+ top: 400px;
+ gap:24px;
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 600;
+ font-size: 24px;
+ line-height: 29px;
+ /* align-items: center; */
+ 
+ color: #000000;
+ 
+ 
+ /* Inside auto layout */
+ 
+ /* flex: none; */
+ /* order: 2;
+ flex-grow: 0; */
+ border: 1px dotted gray;
+ 
+}
+.main-list-products{
+  /* position: relative; */
+
+  position: absolute;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  
+  width: 1128px;
+  height: 264px;
+  
+  top:72px;
+  left: 15%;
+
+  /* Inside auto layout */
+  /* flex: none;
+  order: 1;
+  flex-grow: 0;*/
+  border: 1px dotted gray; 
+
+}
+
+.main-list-bookmark{
+  position: absolute;
+  top:472px;
+  left: 15%;
+
+  
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -370,13 +429,27 @@ border: 1px dotted gray;
   
   
   /* Inside auto layout */
-  
-  flex: none;
+  /* flex: none;
   order: 1;
-  flex-grow: 0;
-  border: 1px dotted gray;
+  flex-grow: 0;*/
+  border: 1px dotted gray; 
 
 }
+
+/* .grid{
+  
+    margin: 50px;
+    padding: 50px;
+            /* width: "480vh"
+             heith:"480vh",
+             width: "264px",
+     height: "264px", 
+            display: grid;
+            gridTemplateRows: 1fr ;
+             gridTemplateColumns: 1fr 1fr 1fr 1fr;
+             backgroundColor: gray;
+  
+} */
 
 .product-list{
   display: flex;
@@ -486,8 +559,74 @@ flex: none;
 order: 1;
 flex-grow: 0;
 }
+.item-wrapper{
+  position: absolute;
+  width: 264px;
+  height: 264px;
+/* Inside auto layout */
+
+/* flex: none; */
+/* order: 0; */
+/* flex-grow: 0; */
+display: flex;
+flex-direction: column;
+align-items: left;
+}
 
 .item-img{
-  width: 300px;
-  height: 300px;
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 264px;
+  height: 210px;
+  left: 0px;
+  top: 0px;
+  
+  object-fit: cover;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+.item-bookmark{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 65.82%;
+  right: 5%;  
+}
+
+.item-info-1{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 81.82%;
+  bottom: 9.09%;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  /* align-items: center; */
+  
+  color: #000000;
+}
+.item-info-2{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 90.91%;
+  bottom: 0%;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  
+  color: #000000;
+  
 }
